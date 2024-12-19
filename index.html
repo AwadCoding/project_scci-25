@@ -45,7 +45,7 @@
         <img
           src="image/family_SCCI-25.jpg"
           alt="family_SCCI-25"
-          style="height: 400px; width: 100%"
+          style="height: 600px; width: 100%"
         />
       </div>
     </div>
@@ -147,11 +147,12 @@
     <hr />
     <hr />
     <section id="form_join">
-      <form target="_blank" method="post">
+      <form target="_blank" method="get">
         <div class="data_user">
           <label for="name">User_name</label>
           <input
             id="name"
+            name="us_name"
             type="text"
             placeholder="ex:Mahmoud Awad"
             required
@@ -161,6 +162,7 @@
           <label for="email-user">Email</label>
           <input
             id="email-user"
+            name="email"
             type="email"
             placeholder="example@example.com"
             required
@@ -170,6 +172,7 @@
           <input
             minlength="8"
             id="pass_email_user"
+            name="pass"
             type="password"
             placeholder="pleas write hight pass"
             required
@@ -185,8 +188,10 @@
           <label for="phone_user">Phone</label>
           <input
             minlength="11"
+            maxlength="11"
             id="phone_user"
             type="tel"
+            name="phone"
             placeholder="ex:01030656171"
             required
           />
@@ -197,24 +202,61 @@
           <h3 for="he_skills">The workshops you would like to apply for</h3>
           <p>please select maximum 3 workshops:-</p>
           <label for="divoo">Divulogy</label>
-          <input type="checkbox" name="youer_skills" id="divoo" />
+          <input
+            type="checkbox"
+            name="user-skiils"
+            value="Divulogy"
+            id="divoo"
+          />
           <label for="market">Marketing</label>
-          <input type="checkbox" name="youer_skills" id="market" />
+          <input
+            type="checkbox"
+            name="user-skiils"
+            value="Marketing"
+            id="market"
+          />
           <label for="inv">Investnour </label>
-          <input type="checkbox" name="youer_skills" id="inv" />
+          <input
+            type="checkbox"
+            name="user-skiils"
+            value="Investnour"
+            id="inv"
+          />
           <label for="tec">Techsolve</label>
-          <input type="checkbox" name="youer_skills" id="tec" />
+          <input
+            type="checkbox"
+            name="user-skiils"
+            value="Techsolve"
+            id="tec"
+          />
           <label for="app">Appssplash </label>
-          <input type="checkbox" name="youer_skills" id="app" /><br />
+          <input
+            type="checkbox"
+            name="user-skiils"
+            value="Appssplash"
+            id="app"
+          /><br />
         </div>
         <br />
         <hr />
         <div class="Gender">
           <h3>The gender :</h3>
           <label for="gender_male">Male</label>
-          <input type="radio" name="gender" id="gender_male" required />
+          <input
+            type="radio"
+            name="gender"
+            value="Male"
+            id="gender_male"
+            required
+          />
           <label for="gender_female">Female</label>
-          <input type="radio" name="gender" id="gender_female" required />
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            id="gender_female"
+            required
+          />
         </div>
         <br />
         <hr />
